@@ -78,7 +78,7 @@ if username and usermail:
 
 # get invites
 if username != None:
-  qfields = ['inviteid', 'label', 'address', 'steempower', 'validity', 'created', 'accepted', 'account', 'username', 'owner', 'active', 'posting', 'memo', 'remaining']
+  qfields = ['inviteid', "email", 'label', 'address', 'steempower', 'validity', 'created', 'accepted', 'account', 'username', 'owner', 'active', 'posting', 'memo', 'remaining']
   results = db.select('invites',qfields,{'username':username},'created DESC')
   for result in results:
     validtill = time.mktime(datetime.datetime.strptime(result['created'], "%Y-%m-%d %H:%M:%S").timetuple()) + (result['validity'] * 60 * 60 * 24)
