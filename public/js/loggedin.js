@@ -147,8 +147,9 @@ function insertIntoTable(data) {
     if(data[i]['remaining'] > 1) {
       data[i]['address'] = '<a href="/accept.html?inviteid='+data[i]['inviteid']+'">Link</a>';
     }else{
-      append = append+data[i]['address']
+      data[i]['address'] = "";
     }
+    append = append+data[i]['address']
     append = append+'</td><td>';
 
     append = append+data[i]['steempower']
