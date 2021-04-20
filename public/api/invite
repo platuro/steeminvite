@@ -83,11 +83,15 @@ if username != None:
   for result in results:
     validtill = time.mktime(datetime.datetime.strptime(result['created'], "%Y-%m-%d %H:%M:%S").timetuple()) + (result['validity'] * 60 * 60 * 24)
 
+    adress = ''
+    if result['email'] == 'true':
+      adress = result['email']
+
     invites.append({
       'inviteid':result['inviteid'],
       'ismail':result['email'],
       'label':result['label'],
-      'address':result['address'],
+      'address':adress,
       'steempower':result['steempower'],
       'validity': datetime.datetime.fromtimestamp(validtill).strftime('%Y-%m-%d %H:%M:%S'),
       'created':result['created'],
