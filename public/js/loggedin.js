@@ -144,12 +144,10 @@ function insertIntoTable(data) {
     append = append+data[i]['label'];
     append = append+'</td><td>';
 
-    data[i]['invite'] = '<a href="/accept.html?inviteid='+data[i]['inviteid']+'">Link</a>';
-    
+    if(data[i]['ismail'] == true){
+      data[i]['address'] = '<a href="/accept.html?inviteid='+data[i]['inviteid']+'">Link</a>';
+    }
     append = append+data[i]['address']
-    append = append+'</td><td>';
-
-    append = append+data[i]['invite']
     append = append+'</td><td>';
 
     append = append+data[i]['steempower']
