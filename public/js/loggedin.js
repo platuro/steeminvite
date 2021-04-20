@@ -146,8 +146,6 @@ function insertIntoTable(data) {
 
     if(data[i]['remaining'] > 1) {
       data[i]['address'] = '<a href="/accept.html?inviteid='+data[i]['inviteid']+'">Link</a>';
-    }else{
-      data[i]['address'] = "";
     }
     append = append+data[i]['address']
     append = append+'</td><td>';
