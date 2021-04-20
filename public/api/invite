@@ -84,6 +84,7 @@ if username != None:
     validtill = time.mktime(datetime.datetime.strptime(result['created'], "%Y-%m-%d %H:%M:%S").timetuple()) + (result['validity'] * 60 * 60 * 24)
     invites.append({
       'inviteid':result['inviteid'],
+      'ismail':result['email'],
       'label':result['label'],
       'address':result['address'],
       'steempower':result['steempower'],
