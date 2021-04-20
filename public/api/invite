@@ -74,7 +74,7 @@ if username and usermail:
       mailer.sendmail(address,'You have been invited to join the Steem blockchain',mailtext+"\n\nhttp://hellosteem.com/accept.html?inviteid="+inviteid)
     except Exception as e:
       db.delete('invites',{'inviteid':inviteid})
-      errorHandler.throwError("Failed sending E-Mail. If this keeps happening, create the invitation without, and send the resulting link yourself. Also notice @pharesim."+str(e))
+      errorHandler.throwError("Failed sending E-Mail. If this keeps happening, create the invitation without, and send the resulting link yourself. Also notice @greece-lover."+str(e))
 
 # get invites
 if username != None:

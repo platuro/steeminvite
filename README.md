@@ -24,7 +24,7 @@ First, clone this repository into the webroot folder
 
 ```
 cd /var/www
-git clone https://github.com/pharesim/hellosteem
+git clone https://github.com/greece-lover/hellosteem
 ```
 
 Set up the database
@@ -87,7 +87,7 @@ Please submit pull requests for any contributions
 
 ## Authors
 
-* **Pharesim** - *idea and initial work* - [pharesim.me](http://pharesim.me)
+* **Pharesim** - *idea and initial work* - [greece-lover.me](http://greece-lover.me)
 
 ## License
 
