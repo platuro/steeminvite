@@ -1,7 +1,7 @@
 {
     "loggedout": {
         "greeting": "Bir Steemian olun!",
-        "explainer": "Steeminvite arkadaşlarınızı steem'e davet etmenizi sağlayan bir hizmettir.",
+        "explainer": "Hellosteem arkadaşlarınızı steem'e davet etmenizi sağlayan bir hizmettir.",
         "buttontext": "başlamak için.",
         "login_error": "Oturum açma hatası",
         "usernamePlaceholder": "Steem kullanıcı adınız",

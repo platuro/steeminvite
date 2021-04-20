@@ -1,7 +1,7 @@
 {
     "loggedout": {
         "greeting": "Stwórz Steemiana!",
-        "explainer": "Steeminvite to serwis, która pozwala zaprosić swoich znajomych do Steem.",
+        "explainer": "Hellosteem to serwis, która pozwala zaprosić swoich znajomych do Steem.",
         "buttontext": "aby zacząć.",
         "login_error": "Błąd logowania",
         "usernamePlaceholder": "Twoja nazwa użytkownika steem",
