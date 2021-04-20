@@ -144,7 +144,7 @@ function insertIntoTable(data) {
     append = append+data[i]['label'];
     append = append+'</td><td>';
 
-    if(data[i]['ismail'] == false){
+    if(data[i]['ismail'] == "false"){
       data[i]['address'] = '<a href="/accept.html?inviteid='+data[i]['inviteid']+'">Link</a>';
     }
     append = append+data[i]['address']
